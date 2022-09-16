@@ -1,0 +1,79 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>EBD</title>
+<%--    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+--%></head>
+<%--<body style="background-color:#FFFFCC">--%>
+<%-- <body style="background-color:#99FFCC">--%>
+<%-- <body style="background-color:#66CC99">--%> 
+<%--  <body style="background-color:#E6E6E6">--%>
+<%--<body style="background-color:#C3D9FF">
+--%><body style="background-color:white">
+
+    <form id="form1" runat="server">
+    <div>
+ 
+    <asp:Panel ID="Panel1" runat="server" style="top: 10px; width: 100px; left: 2%; position: absolute; background-color: white;">
+
+ 
+    <table width="100%">
+        <tr>
+        <td>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/RDSOlogo.png" Height="75px"/>
+          </td>
+        </tr>
+    
+    </table>
+  </asp:Panel>
+
+ <asp:panel ID="Panel2" runat="server" style="top: 10px; width: 60%; left: 300px; position: absolute;">
+    <table width="100%">
+    <tr>
+                <td align= "center">
+    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="18pt"
+         ForeColor="#004000" Text="Research Designs & Standards Organisation"></asp:Label>
+                  
+                </td>
+      </tr> 
+     <tr>
+                <td align= "center">
+    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="16pt"
+         ForeColor="#CC6633" Text="Motive Power Directorate"></asp:Label>
+                  
+                </td>
+      </tr>          
+     
+ </table>
+  </asp:panel>
+ <asp:panel ID="Panel3" runat="server" style="top: 90px; width: 100%; left: 10px; position: absolute;">
+
+<table width="100%">
+<tr>
+                <td align= "center">
+  <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="16pt"
+         ForeColor="#CC0033" Text="STOP (Stopping Train on Pneumatic Brakes) Simulation Package"></asp:Label>
+
+<%--<FONT SIZE="5" COLOR="blue"><MARQUEE WIDTH=100%  BEHAVIOR=ALTERNATE SCROLLDELAY=500 BGColor="yellow" >STOP (Stoping Train on Pneumatic Brakes) Simulation Package</MARQUEE></FONT> 
+--%>
+
+  <hr align="left" style="color:#c00;height: 5px;background-color:#000099" />
+
+                   <%-- <hr />--%>
+                  
+                </td>
+      </tr>          
+
+</table>
+</asp:panel>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+   </div>
+    </form>
+</body>
+</html>
